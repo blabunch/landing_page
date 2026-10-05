@@ -64,11 +64,19 @@
       border-color: $c-border-focus;
     }
 
+    &:-webkit-autofill,
+    &:-webkit-autofill:hover,
+    &:-webkit-autofill:focus {
+      -webkit-text-fill-color: $c-dark-text;
+      box-shadow: 0 0 0 1000px $c-light-bg inset;
+      transition: background-color 5000s ease-in-out 0s;
+    }
+
     &--textarea {
       height: 150px;
       padding-top: 14px;
 
-      resize: vertical;
+      resize: none;
       line-height: 140%;
     }
   }
